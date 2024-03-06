@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
+const {ApolloServer} = require("@apollo/server");
+const {startStandaloneServer} = require("@apollo/server/standalone");
 
-const uri = "mongodb+srv://Joseph:joe123@cluster0.tu1f3as.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://joseph:joe123@atlascluster.7l3s3bx.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster";
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable 
-const connection = mongoose.connect(uri);
-
-if(connection) {
-	console.log("connect");
-}
